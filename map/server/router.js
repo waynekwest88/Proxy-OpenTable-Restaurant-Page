@@ -13,8 +13,4 @@ router.get(`/:restaurant_id/about`, requests.about.get);
 //http GET request for  `/location`
 router.get(`/:restaurant_id/location`, requests.location.get);
 
-// router.route(`/:restaurant_id/about`).get(requests.about.get);
-
-// router.route(`/:restaurant_id/location`).get(requests.location.get);
-
 module.exports = router;
