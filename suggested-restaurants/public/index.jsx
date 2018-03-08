@@ -56,7 +56,7 @@ class Suggestions extends React.Component {
 
   render() {
     return (
-    <div>
+    <div id="container">
       <RestaurantList list={this.state.restaurants} scroll={this.scroll.bind(this)} 
                       getId={this.getRestaurantId.bind(this)} />
     </div>

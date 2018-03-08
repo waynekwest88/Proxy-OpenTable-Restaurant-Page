@@ -15,10 +15,13 @@ span.title{
 
 .reservation-widget{
   width: 300px;
-  margin-top: 10px;
+  margin-top: 50px;
   box-shadow: 0px 0px 15px lightgrey;
   font-family: sans-serif;
-  padding-bottom: 8px
+  padding-bottom: 8px;
+  height: 300px;
+  margin-left: 850px;
+  position: fixed;
 }
 
 .party-size, .datepicker, .timeselector{

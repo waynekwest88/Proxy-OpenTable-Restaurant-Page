@@ -96,7 +96,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div id="menu-container">
         <h2 className="menu-title">Menu</h2>
         <div className="menu-nav">
           <MenuButtons menuNames={this.state.restaurantMenus} menuClick={this.handleMenuClick} />

@@ -106,11 +106,11 @@ class Map extends React.Component {
           <TopTags restaurant={this.state.restaurant}/>
           <Description restaurant={this.state.restaurant} readMore={this.readMore.bind(this)} readLess={this.readLess.bind(this)} toggled={this.state.readmore}/>
           <div>
-            <table style={{marginTop: '15px', marginBottom: '15px', marginRight: '700px', marginLeft: '300px'}}>
+            <table style={{marginTop: '15px', marginBottom: '50px', marginRight: '450px', marginLeft: '150px'}}>
               <tbody>
                 <tr>
-                  <td style={{width: '60%'}}><LeftAbout restaurant={this.state.restaurant}/></td>
-                  <td><Maps restaurant={this.state.restaurant}/><RightAbout restaurant={this.state.restaurant}/></td>
+                  <td style={{width: '400px', }}><LeftAbout restaurant={this.state.restaurant}/></td>
+                  <td valign="top" className="right-about" style={{width: '300px'}}><Maps restaurant={this.state.restaurant}/><RightAbout restaurant={this.state.restaurant}/></td>
                 </tr>
               </tbody>
             </table>

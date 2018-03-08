@@ -171,12 +171,15 @@ body {
 .reviews {
   @include grid-container;
   overflow: hidden;
-  padding: 2em;
+  // padding: 2em;
+  width: 608px;
+  margin-left: 150px;
 
   .stats {
     @include grid-column(12);
     border-bottom: 1px solid $grey;
     padding-bottom: 1rem;
+    width: 608px;
 
     .overall {
       @include grid-container;
@@ -186,6 +189,7 @@ body {
       .breakdown {
         @include grid-column(12);
         margin-left:0;
+        width: 340px;
 
         .rating:last-child {
           border-right: none;
@@ -317,7 +321,7 @@ body {
     @include grid-column(12);
     margin-left:0;
 
-    padding: 1em 0;
+    // padding: 1em 0;
   }
 
   .review-footer {

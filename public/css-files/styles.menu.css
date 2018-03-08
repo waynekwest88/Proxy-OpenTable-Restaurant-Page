@@ -10,6 +10,11 @@
   font-family: 'BrandonText','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto',Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
 }
 
+#menu-container {
+  width: 608px;
+  margin-left: 150px;
+}
+
 .menu-nav {
   margin-top: calc(-1 * 1rem);
   padding-bottom: 1rem;
