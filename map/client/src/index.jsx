@@ -45,7 +45,7 @@ class Map extends React.Component {
   getInformation(restaurant_id) {
     axios.get(`http://localhost:1127/r/${restaurant_id}/about`)
     .then((response) => {
-      console.log(response);
+      // console.log(response);
       this.setState({
         restaurant: response.data,
         isLoading: false, 
@@ -53,7 +53,7 @@ class Map extends React.Component {
       // console.log('this console log is from within the axios request success', this.state)
     })
     .catch((error) => {
-      console.log(error);
+      console.log('error', error);
     });
   }
   

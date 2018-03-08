@@ -2,6 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
 import RestaurantList from './components/RestaurantList.jsx';
+import CONFIG from '../config.client.js';
+
+const ENV = window.ENV = 'TEST'; // Define current enironment
+const PATH = window.PATH = CONFIG[ENV].HOST + ":" + CONFIG[ENV].PORT;
 
 class Suggestions extends React.Component {
   constructor(props) {
@@ -12,19 +16,20 @@ class Suggestions extends React.Component {
   }
 
   componentWillMount() {
-    this.fetch();
+    this.fetch(window.location.pathname);
   }
 
-  fetch() {
+  fetch(path) {
     $.ajax({
       method: 'GET',
-      url: 'http://localhost:3000' + window.location.pathname + 'suggestions',
+      url: `${PATH}${path}suggestions`,
+      // url: 'http://localhost:3001' + window.location.pathname + 'suggestions',
       success: (data) => {
         console.log('SUCCESS! ', data);
         this.setState({restaurants: data})
       },
       error: (err) => {
-        console.log('ERROR', err)
+        console.log('ERROR', err);
       }
     })
   }
